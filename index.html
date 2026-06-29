@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Glass Decorator-замена остекления</title>
+    <meta charset="utf-08">
+    <meta name="keywords" content="Замена окон, Остекление балкона, утепление балкона">
+    <meta name="discriprion" content="Пластиковые окна напрямую с завода">
+    <link rel="apple-touch-icon" sizes="152x152" href="Images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="Images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="Images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+
+      <!-- Header -->
+      <header class="header" id="header">
+         <div class="container">
+            <div class="header__inner">
+              <div class="logo">
+                Glass Decorator
+              </div>
+
+              <div class="number-phone">
+                <img class="img-phone" src="Images/phone.png" alt="">
+                +7(812)980-44-29
+              </div>
+
+              <nav class="nav" id="nav">
+                <a class="nav__link" href="#" data-scroll="#banner">ЗАМЕР</a>
+                <a class="nav__link" href="#" data-scroll="#categories-title">СТОИМОСТЬ</a>
+                <a class="nav__link" href="#" data-scroll="#profiles-title">ПРОФИЛЬ</a>
+                <a class="nav__link" href="#" data-scroll="#works-title">РАБОТЫ</a>
+              </nav>
+
+              <div class="burger" id="burger">
+                <span class="burger__item"></span>
+              </div>
+
+           </div>
+        </div>
+      </header>
+
+      <!-- Intro -->
+      <div class="intro" id="intro">
+        <div class="container">
+          <div class="intro__inner">
+            <div class="slogan">
+            окна и двери напрямую с завода!
+            </div>
+            <div class="number">
+              <img class="img-phone" src="Images/phone.png" alt="">
+              +7(812)980-44-29
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Banner -->
+      <div class="banner" id="banner">
+        <div class="container">
+          <div class="banner_inner">
+            <form action="send_mail.php" id="form" name="form" method="POST">
+              <div class="order-box" id="box">
+                <h5 class="order-box-title">БЕСПЛАТНЫЙ ЗАМЕР</h5>
+                <input
+                type="text"
+                class="field"
+                placeholder="ИМЯ"
+                id="name"
+                name="name"
+                data-reg="^[А-ЯЁ][а-яё]*$">
+                <input
+                type="text"
+                class="field"
+                placeholder="+7"
+                id="phone"
+                name="phone"
+                data-reg="^((\+7|7|8)+([0-9]){10})$">
+                <button
+                class="button"
+                type="submit"
+                id="button"
+                name="button">ОТПРАВИТЬ</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories-title -->
+      <div class="categories-title" id="categories-title">
+        <div class="container">
+          <div class="categories-title-inner">
+          СТОИМОСТЬ ОКНА В ЗАВИСИМОСТИ ОТ КОНФИГУРАЦИИ
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories -->
+      <div class="categories">
+        <div class="container">
+          <div class="goods">
+            <div class="goods__item">
+              <img class="goods__window" src="Images/product-1.png" alt="">
+              <div class="goods__title">Окно одностворчатое</div>
+              <div class="goods__subtitle">REHAU</div>
+              <h6 class="goods__text">6 500 руб.</h6>
+            </div>
+
+            <div class="goods__item">
+              <img class="goods__window" src="Images/product-2.png" alt="">
+              <div class="goods__title">Окно двустворчатое</div>
+              <div class="goods__subtitle">REHAU</div>
+              <h6 class="goods__text">8 500 руб.</h6>
+            </div>
+
+            <div class="goods__item">
+              <img class="goods__window" src="Images/product-3.png" alt="">
+              <div class="goods__title">Окно трёхстворчатое</div>
+              <div class="goods__subtitle">REHAU</div>
+              <h6 class="goods__text">9 500 руб.</h6>
+            </div>
+
+            <div class="goods__item">
+              <img class="goods__window" src="Images/product-4.png" alt="">
+              <div class="goods__title">Балконный блок</div>
+              <div class="goods__subtitle">REHAU</div>
+              <h6 class="goods__text">12 500 руб.</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profiles-title -->
+      <div class="profiles-title" id="profiles-title">
+        <div class="container">
+          <div class="profiles-title__inner">ПРОФИЛИ</div>
+        </div>
+      </div>
+
+      <!-- Profiles -->
+      <div class="profiles">
+        <div class="container">
+          <div class="profiles__inner">
+            <div class="profiles__item">
+              <img class="profiles__profile" src="Images/profile.png" alt="">
+              <h6 class="profiles__name">REHAU</h6>
+              <p class="profiles__text"><span class="title">Blitz</span>– базовая
+              модель, востребованная в сегменте «эконом» из-за доступной цены
+              и приличных технических показателей – монтажная глубина 60 мм,
+              0,64 м2°С/Вт.<br>
+              <span class="title">Action</span> – трехкамерная модель имеет
+              глубину 60 мм, а показатель теплосохранения 0,64 м2°С/Вт.<br>
+            </div>
+
+            <div class="profiles__item">
+              <img class="profiles__profile" src="Images/profile.png" alt="">
+              <h6 class="profiles__name">IVAPER</h6>
+              <p class="profiles__text"><span class="title">IVAPER 62</span> -
+              3-хкамерный профиль с монтажной глубиной 62 мм. Сопротивление теплопередаче профиля IVAPER 62 равно
+              0,77 м2С/Вт.<br>
+              <span class="title">IVAPER 70 5</span> - 2х камерная оконная система
+              IVAPER 70. Коэффициент сопротивления теплопередаче - 0,9 м2С/Вт).<br>
+            </div>
+
+            <div class="profiles__item">
+              <img class="profiles__profile" src="Images/profile.png" alt="">
+              <h6 class="profiles__name">VEKA</h6>
+              <p class="profiles__text"><span class="title">EUROLINE</span> – 3-х
+              камерный, 58 мм, теплоизоляция 0,64 м2°С/Вт, профиль класса эконом.
+              <br>
+              <span class="title">PROLINE</span> – 4-х камерный, 70 мм, хорошие
+              звуко-, теплоизоляционные свойства (0,75 м2°С/Вт).<br>
+            </div>
+
+            <div class="profiles__item">
+              <img class="profiles__profile" src="Images/profile.png" alt="">
+              <h6 class="profiles__name">EXPROF</h6>
+              <p class="profiles__text"><span class="title">Externa</span>— 46 мм,
+              2 камеры, облегченная система, применяется для холодного
+              остекления неотапливаемых помещений, в том числе балконов и лоджий.
+              <br>
+              <span class="title">Prowin</span>— 58 мм, 3 камеры, экономичный
+              вариант с уменьшенной толщиной лицевых стенок.
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Works-title -->
+      <div class="works-title" id="works-title">
+        <div class="container">
+          <div class="works-title__inner">ПРИМЕРЫ НАШИХ РАБОТ</div>
+        </div>
+      </div>
+
+      <!-- Works-photos -->
+      <div class="works-photos">
+        <div class="container">
+          <div class="photos">
+            <div class="photos__item">
+              <img class="work" src="Images/work-1.jpg" alt="">
+            </div>
+
+            <div class="photos__item">
+              <img class="work" src="Images/work-2.jpg" alt="">
+            </div>
+
+            <div class="photos__item">
+              <img class="work" src="Images/work-3.jpg" alt="">
+            </div>
+
+            <div class="photos__item">
+              <img class="work" src="Images/work-4.jpg" alt="">
+            </div>
+
+            <div class="photos__item">
+              <img class="work" src="Images/work-5.jpg" alt="">
+            </div>
+
+            <div class="photos__item">
+              <img class="work" src="Images/work-6.jpg" alt="">
+            </div>
+
+            <div class="photos__item">
+              <img class="work" src="Images/work-7.jpg" alt="">
+            </div>
+
+            <div class="photos__item">
+              <img class="work" src="Images/work-8.jpg" alt="">
+            </div>
+
+            <div class="photos__item">
+              <img class="work" src="Images/work-9.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-title">
+          <div class="container">
+            <div class="footer-title__inner">
+            Больше работ в нашей группе “ВКонтакте”
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer-widget -->
+        <div class="footer-widget">
+          <div class="container">
+            <div class="footer-widget__inner">
+              <div id="vk_groups"></div>
+              <script type="text/javascript">VK.Widgets.Group("vk_groups",
+              {mode: 3, no_cover: 1, width: 400, height: 400, color1: "FFFFFF",
+              color2: "000000", color3: "5181B8"}, 178113263);
+              </script>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer-end -->
+        <div class="footer-end">
+          <div class="container">
+            <div class="info">
+              <div class="info__inner">
+              i.emeli_<br>
+              2022
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Java Script -->
+
+      <!-- <script src="app.js"></script> -->
+
+    </div>
+  </body>
+</html>
