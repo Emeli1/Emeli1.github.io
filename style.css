@@ -599,7 +599,10 @@ p {
     .categories-title {
       line-height: 40px;
     }
+
     .profiles__inner {
       grid-template-columns: auto;
     }
   }
+
+
